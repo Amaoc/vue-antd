@@ -1,4 +1,4 @@
-# vue-omniscient
+# vue-antd
 
 > A Vue.js project
 
@@ -29,14 +29,14 @@ npm run build:production
 <!-- For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader). -->
 
 ## 项目结构说明
-- [项目结构说明](http://git.lsfash.cn/f2e/vue-omniscient/blob/master/docs/projectStructure.md/)
+- [项目结构说明](https://github.com/johnson8999/vue-antd/blob/master/docs/projectStructure.md/)
 
 
 ## 如何新建模块
-- [如何新建模块](http://git.lsfash.cn/f2e/vue-omniscient/blob/master/docs/buildModule.md/)
+- [如何新建模块](https://github.com/johnson8999/vue-antd/blob/master/docs/buildModule.md/)
 
 ## 如何新建页面
-- [如何新建页面](http://git.lsfash.cn/f2e/vue-omniscient/blob/master/docs/buildPage.md/)
+- [如何新建页面](https://github.com/johnson8999/vue-antd/blob/master/docs/buildPage.md/)
 
 
 ## 注意事项
