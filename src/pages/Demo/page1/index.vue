@@ -1,0 +1,63 @@
+<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <h2>url取值id：{{ id }}</h2>
+    <h2>url取值type：{{ type }}</h2>
+    <h2>store取值status：{{ status }}</h2>
+    <h2>store取值userId：{{ userId }}</h2>
+    <button @click="changeStatus">changeStatus</button>
+    <button @click="getUserInfo">getUserInfo</button>
+    <show-user-info></show-user-info>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue'
+import { Button } from 'ant-design-vue'
+
+import { mapState, mapMutations, mapActions } from 'vuex'
+import { moduleName } from './store'
+
+import showUserInfo from './components/showUserInfo'
+
+import axios from '@/components/axios'
+axios.get('/mockapi/login').then((res) => {
+  console.log(res)
+})
+
+Vue.component(Button.name, Button)
+
+export default {
+  name: 'demo',
+  data () {
+    return {
+      msg: 'demo页面'
+    }
+  },
+  components: {
+    showUserInfo
+  },
+  computed: {
+    ...mapState({
+      id: state => state.route.params.id,
+      type: state => state.route.query.type
+    }),
+    ...mapState(moduleName, {
+      status: state => state.status,
+      userId: state => state.userId
+    })
+  },
+  methods: {
+    ...mapMutations(moduleName, [
+      'changeStatus'
+    ]),
+    ...mapActions(moduleName, [
+      'getUserInfo'
+    ])
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
