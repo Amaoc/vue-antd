@@ -94,10 +94,10 @@
 <script>
 import Vue from 'vue'
 import { Button } from 'ant-design-vue'
-import axios from '@/components/axios'
-axios.get('/login').then((res) => {
-  console.log(res)
-})
+// import axios from '@/components/axios'
+// axios.get('/login').then((res) => {
+//   console.log(res)
+// })
 
 Vue.component(Button.name, Button)
 
