@@ -7,17 +7,14 @@
   "scripts": {
     "mock:dev": "cross-env NODE_ENV=dev MOCK=mock webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "mock:alpha": "cross-env NODE_ENV=alpha MOCK=mock webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "alpha": "cross-env NODE_ENV=alpha webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "prlease": "cross-env NODE_ENV=prlease webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "production": "cross-env NODE_ENV=production webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-
     "build:dev": "cross-env NODE_ENV=dev node build/build.js",
     "build:alpha": "cross-env NODE_ENV=alpha node build/build.js",
     "build:prlease": "cross-env NODE_ENV=prlease node build/build.js",
     "build:production": "cross-env NODE_ENV=production node build/build.js",
-
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
