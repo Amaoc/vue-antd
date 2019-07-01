@@ -1,0 +1,8 @@
+/build/
+/config/
+/dist/
+/mock/
+/node_modules/
+/src/plugins/
+/*.js
+
